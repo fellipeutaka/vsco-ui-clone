@@ -57,6 +57,13 @@ export const SupportContainer = styled.div`
   @media screen and (max-width: 768px) {
     & {
       height: 100vh;
+      align-items: center;
+      padding-left: 0;
+
+      p {
+        text-align: center;
+        max-width: 80%;
+      }
     }
   }
 `;
@@ -102,6 +109,13 @@ export const CommunityContainer = styled.div`
   @media screen and (max-width: 768px) {
     & {
       height: 100vh;
+      align-items: center;
+      padding-left: 0;
+
+      p {
+        text-align: center;
+        max-width: 80%;
+      }
     }
   }
 `;
