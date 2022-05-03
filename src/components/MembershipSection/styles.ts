@@ -22,6 +22,13 @@ export const Title = styled.h1`
   font-weight: 800;
   z-index: 1;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    & {
+      font-size: 48px;
+      font-size: 4.8rem;
+    }
+  }
 `;
 
 export const SubTitle = styled.h2`
