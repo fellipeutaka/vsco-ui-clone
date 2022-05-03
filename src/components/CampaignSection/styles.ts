@@ -1,4 +1,3 @@
-import { FiChevronDown } from "react-icons/fi";
 import styled from "styled-components";
 
 export const Container = styled.section`
@@ -30,16 +29,21 @@ export const Title = styled.h1`
   z-index: 1;
 `;
 
-export const ChevronDown = styled(FiChevronDown)`
+export const ChevronDownButton = styled.button`
   color: #fff;
-  width: 32px;
-  height: 32px;
   position: absolute;
   bottom: 16px;
   align-self: center;
   z-index: 1;
-
+  cursor: pointer;
   animation: bounce 1s infinite ease-out;
+  border: none;
+  background-color: transparent;
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
 
   @keyframes bounce {
     0%,

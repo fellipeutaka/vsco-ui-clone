@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
-import DownloadButton from "../DownloadButton";
-import { BgImg, ChevronDown, Container, Title } from "./styles";
+import { useCallback, useEffect, useState } from "react";
+import { FiChevronDown } from "react-icons/fi";
+import Button from "../Button";
+import { BgImg, ChevronDownButton, Container, Title } from "./styles";
 
 export default function CampaignSection() {
   const colors = ["yellow", "red", "green"];
@@ -18,11 +19,18 @@ export default function CampaignSection() {
     };
   }, [currentImgIndex]);
 
+  const navigateToHeroSection = useCallback(() => {
+    document.querySelector("section#hero")?.scrollIntoView();
+  }, []);
+
   return (
     <Container>
       <Title>Where expression matters most.</Title>
-      <DownloadButton content="Download VSCO" />
-      <ChevronDown />
+      <Button variants="download" />
+
+      <ChevronDownButton onClick={() => navigateToHeroSection()}>
+        <FiChevronDown />
+      </ChevronDownButton>
       <BgImg
         src={`https://assets.vsco.co/assets/images/homepage-2020/reflect-campaign_desktop_${colors[currentImgIndex]}.jpg`}
         alt="Background image"
