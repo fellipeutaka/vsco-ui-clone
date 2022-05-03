@@ -1,15 +1,15 @@
+import { ReactNode } from "react";
 import { Container } from "./styles";
 
 export type ButtonProps = {
-  variants: "download" | "trial";
+  variant: "black" | "blue";
+  children: ReactNode;
 };
 
-export default function Button({ variants }: ButtonProps) {
+export default function Button({ variant, children }: ButtonProps) {
   return (
-    <Container variants={variants} href="/download">
-      {variants === "download"
-        ? "Download VSCO"
-        : "Start your free 7-day trial"}
+    <Container variant={variant} href="/download">
+      {children}
     </Container>
   );
 }

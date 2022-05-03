@@ -3,8 +3,9 @@ import { FiChevronDown } from "react-icons/fi";
 import Button from "../Button";
 import { BgImg, ChevronDownButton, Container, Title } from "./styles";
 
+const colors = ["yellow", "red", "green"];
+
 export default function CampaignSection() {
-  const colors = ["yellow", "red", "green"];
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
   useEffect(() => {
@@ -26,9 +27,9 @@ export default function CampaignSection() {
   return (
     <Container>
       <Title>Where expression matters most.</Title>
-      <Button variants="download" />
+      <Button variant="black">Download VSCO</Button>
 
-      <ChevronDownButton onClick={() => navigateToHeroSection()}>
+      <ChevronDownButton onClick={navigateToHeroSection}>
         <FiChevronDown />
       </ChevronDownButton>
       <BgImg

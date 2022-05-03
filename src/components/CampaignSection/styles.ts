@@ -27,6 +27,12 @@ export const Title = styled.h1`
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
   z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    & {
+      text-align: center;
+    }
+  }
 `;
 
 export const ChevronDownButton = styled.button`

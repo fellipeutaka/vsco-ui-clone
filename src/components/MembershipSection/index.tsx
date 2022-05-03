@@ -9,7 +9,7 @@ export default function MembershipSection() {
         Get the latest tools and exclusive inspirational content with
         VSCO&nbsp;membership.
       </SubTitle>
-      <Button variants="trial" />
+      <Button variant="blue">Start your free 7-day trial</Button>
       <BgImg
         src="https://assets.vsco.co/assets/images/homepage-2020/montage-hero_3@2x.jpg"
         alt="Background image"

@@ -7,8 +7,6 @@ export const Container = styled.section`
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  padding: 0 64px;
-  padding: 0 6.4rem;
   position: sticky;
   top: 0;
   text-align: center;

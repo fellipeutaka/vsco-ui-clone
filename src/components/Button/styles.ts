@@ -11,7 +11,7 @@ export const Container = styled.a<ButtonProps>`
   text-decoration: none;
 
   ${(props) =>
-    props.variants === "download"
+    props.variant === "black"
       ? css`
           border: 1px solid #000;
           background-color: #000;

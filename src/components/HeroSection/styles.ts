@@ -6,7 +6,7 @@ export const Container = styled.section`
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 12vh);
+  height: 100vh;
   padding: 0 64px;
   padding: 0 6.4rem;
   position: sticky;
@@ -28,6 +28,12 @@ export const Title = styled.h1`
   margin-bottom: 2.4rem;
   z-index: 1;
   max-width: 16ch;
+
+  @media screen and (max-width: 768px) {
+    & {
+      text-align: center;
+    }
+  }
 `;
 
 export const BgImg = styled.img`
